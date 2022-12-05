@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pika = "*"
+redis = "*"
+rq = "*"
+pydantic = "*"
+requests = "*"
+redis-om = "*"
+werkzeug = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
