@@ -3,7 +3,6 @@
 import json
 import heapq as hq
 from collections import defaultdict
-# from .functions import some_long_function
 
 
 job_schedular = []
@@ -30,9 +29,9 @@ def popd():
             job_id = job_ids.pop()
 
             if job_id in deleted_ids_from_queue:
-                #     continue
-                # print("job_id:  ", job_id)
-                # print("job_id_to_dependency: ", job_id_to_dependency)
+                continue
+            # print("job_id:  ", job_id)
+            # print("job_id_to_dependency: ", job_id_to_dependency)
             dependent = job_id_to_dependency[job_id]
             depend = []
             depend.append(job_id)
